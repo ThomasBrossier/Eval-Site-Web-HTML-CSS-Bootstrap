@@ -7,6 +7,7 @@ module.exports = {
   entry: {
       main : path.resolve(__dirname, "src/index.js"),
       event : path.join(__dirname, "src/event.js"),
+      donation : path.join(__dirname, "src/donation.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -45,6 +46,11 @@ module.exports = {
         filename:'event.html', 
         template: path.resolve(__dirname, "src/event.html"),
         chunks : ["event"]
+      }),
+    new HtmlWebpackPlugin({
+        filename:'donation.html', 
+        template: path.resolve(__dirname, "src/donation.html"),
+        chunks : ["donation"]
       })
   ],
   devtool: "source-map",
