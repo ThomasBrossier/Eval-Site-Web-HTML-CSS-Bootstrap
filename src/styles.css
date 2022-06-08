@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 body{
-  font-family: "Poppins"!important ;    
+  font-family: "Poppins"!important ; 
+  font-size: 1.2rem!important;  
+}
+.navbar .navbar-nav {
+  display: block;
+  float: right ;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+      display: flex;
+      vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
 }
