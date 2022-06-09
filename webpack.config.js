@@ -37,6 +37,15 @@ module.exports = {
         },
       ],
     }),
+    new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/assets/videos/*',
+          to: 'assets/videos/[name][ext]',
+        },
+      ],
+    }),
     new HtmlWebpackPlugin({
       filename:'index.html', 
       template: path.resolve(__dirname, "src/index.html"),
