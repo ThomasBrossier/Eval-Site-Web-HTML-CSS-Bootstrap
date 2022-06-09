@@ -65,7 +65,7 @@
         <div class="row ">
             <div class=" col col-7 col-sm-4 col-md-3 col-lg-3 d-flex flex-column">
                 <div class="underline"></div>
-                  <h2 class="my-3">Faire un don</h2>
+                  <h2 class="my-3">Donnation</h2>
                 <div class="underline"></div>
             </div>
         </div>
@@ -73,7 +73,11 @@
             <div class="col col-12 col-md-6">
                 A chaque éxpédition, des <strong>frais de gestion</strong> sont supporté par l'association, si vous ne pouvez pas <strong>nous aider</strong>  lors de ces expeditions pour diverses raisons, 
                 vous pouvez nous <a href="./donation.html#donnate" >faire un don</a>. <br>
-                Cela nous permettra de mener notre mission à bien et dans de bonne conditions ! 
+                Cela nous permettra de mener notre mission à bien et dans de bonne conditions !<br>
+                Pour toutes questions concernant les dons, nous vous invitons à <a href="./index.html#contact">nous contacter</a>.  
+                <div class="d-flex justify-content-center align-items-center my-5">
+                  <a href="./donation.html#donnate" class="btn btn-primary py-2">Je fais un don</a>
+                </div>
             </div>
             <div class="col col-12 col-md-6 my-5">
                <img class="img-fluid" src="./assets/images/donation.jpg"/>
@@ -82,62 +86,88 @@
     </div>
   </div>
     <div class="d-flex flex-column pt-5 justify-content-center min-vh-100 bg-success text-white">
-        <div class="container">
+        <div class="container bg-dark rounded p-4">
           <div class="row ">
-              <div class=" col col-7 col-sm-4 col-md-3 col-lg-2 d-flex flex-column">
+              <div class=" col d-flex flex-column">
                   <div class="underline underline-light"></div>
-                    <h2 class="my-3">Nos dates d'événements</h2>
+                    <h2 class="my-3">Faire un don</h2>
                   <div class="underline underline-light"></div>
               </div>
           </div>
-          <div class="row align-items-center my-4">
-            <div class="table-responsive-sm">
-            <table class="table text-white">
-                <thead>
-                  <tr class="table-active text-light">
-                    <th scope="col">#</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Lieu</th>
-                    <th scope="col">Detail</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="table-active text-light" scope="row">1</th>
-                    <td>10/06/2022</td>
-                    <td>St Bausile du putois</td>
-                    <td>Journée rivière, repas prevu par l'association</td>
-                  </tr>
-                  <tr>
-                    <th class="table-active text-light" scope="row">2</th>
-                    <td>17/06/2022</td>
-                    <td>St Etienne d'issenssac</td>
-                    <td>Journée canöe, prévoir Pic-Nik</td>
-                  </tr>
-                  <tr>
-                    <th  class="table-active text-light" scope="row">3</th>
-                    <td>10/07/2022</td>
-                    <td>Brissac</td>
-                    <td>Reunion annuel, fêtes organisé par l'association</td>
-                  </tr>
-                  <tr>
-                    <th  class="table-active text-light" scope="row">4</th>
-                    <td>15/07/2022</td>
-                    <td>Laroque</td>
-                    <td>Journée canöe, prévoir Pic-Nik</td>
-                  </tr>
-                  <tr>
-                    <th  class="table-active text-light" scope="row">5</th>
-                    <td>25/07/2022</td>
-                    <td>Paris</td>
-                    <td>Journée National de l'environnement, transport et repas pris en charge par l'association</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> 
-              <div class="d-flex justify-content-center align-items-center my-5">
-                <a href="./index.html#contact" class="btn btn-primary py-2">Contactez-nous pour réserver votre prochaine expédition</a>
+          <div class="row align-items-start justify-content-center my-4">
+            <div class="col col-12 col-lg-4">
+                <h3 class="bg-primary rounded text-center my-1">Mon don</h3>
+                <div class="bg-light text-secondary rounded">
+                  <ul class="list-inline d-flex justify-content-center pt-3">
+                    <li class="donation-value list-inline-item border p-3">10</li>
+                    <li class="donation-value list-inline-item border p-3">20</li>
+                    <li class="donation-value list-inline-item border p-3">30</li>
+                    <li class="donation-value list-inline-item border p-3">40</li>
+                    <li class="donation-value list-inline-item border p-3">50</li>
+                  </ul>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <span>Montant libre :</span>
+                    <input class="m-4" type="number" style="width: 20%;"/>
+                  </div>
+                  
               </div>
+            </div>
+            <div class="col col-12 col-lg-4">
+              <h3 class="bg-primary rounded text-center  my-1" >Mes coordonnées</h3>
+              <div class="bg-light p-3 text-dark">
+                <form >
+                  <div class="form-group my-3">
+                    <label for="name" class="col-form-label-lg">Nom</label>
+                    <input type="text" class="form-control form-control-lg" id="name" placeholder="Saisissez votre nom">
+                  </div>
+                  <div class="form-group my-3">
+                    <label for="surname" class="col-form-label-lg">Prénom</label>
+                    <input type="text" class="form-control form-control-lg" id="surname" placeholder="Saisissez votre prénom">
+                  </div>
+                  <div class="form-group my-3">
+                    <label for="email" class="col-form-label-lg">Adresse Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp" placeholder="Saisissez votre email">
+                    <small id="emailHelp" class="form-text text-secondary">Nous ne partageons pas vos données. Conformément à la loi en vigueur rgpd</small>
+                  </div>
+                  <div class="d-flex flex-row justify-content-center align-items-center form-check my-3 w-100">
+                      <div class="w-50 d-flex align-items-center">
+                          <label class="form-check-label " for="rgpd">J'accepte que mes données soit utilisé dans le cadre de la RGPD</label>
+                      </div>
+                      <div class="w-50 d-flex justify-content-center align-items-center">
+                          <input type="checkbox" style="width:40px;height:40px;"class="form-check-input" id="rgpd">          
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col col-12  col-lg-4">
+              <h3 class="bg-primary rounded text-center  my-1">Récapitulatif</h3>
+              <div class="bg-light p-3 text-dark">
+                <div class="table-responsive-sm">
+                  <table class="table">
+                      <thead>
+                        <tr class="table-active">
+                          <th scope="col">Selection</th>
+                          <th scope="col">Don</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Don</td>
+                          <td> XX€</td>
+                        </tr>
+                        <tr>
+                          <td class="table-active">Total</td>
+                          <td> XXX€</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+                  <div class="d-flex justify-content-center align-items-center my-5">
+                    <a href="./donation.html#donnate" class="btn btn-primary py-2">Valider le paiement</a>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>  

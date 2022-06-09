@@ -45,3 +45,8 @@ iframe
             height: 400px;
             margin: auto;
         }
+.donation-value:hover{
+  background-color: 	rgb(124, 105, 239)!important ;
+  color: white;
+  cursor: pointer;
+}
